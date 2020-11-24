@@ -118,7 +118,8 @@ section {
 
 /*  Splash  */
 .splash {
-    background-image: url('../images/Background_Image.png');
+    /*background-image: url('../images/Background_Image.png');*/
+    background: #0097e6;
     background-size: cover;
     color: $color-four;
     min-height: 500px;
