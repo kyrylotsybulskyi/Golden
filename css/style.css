@@ -73,6 +73,8 @@ section {
   margin: 0;
   list-style-type: none;
   text-align: right;
+  position: absolute;
+  top: 3%;
 }
 
 .navigation ul li {
@@ -111,7 +113,7 @@ section {
 
 /*  Splash  */
 .splash {
-  background-image: url(E:/Projects/learning-git-3/images/Background_Image.png);
+  background-image: url("../images/Background_Image.png");
   background-size: cover;
   color: #ffffff;
   min-height: 500px;
@@ -136,7 +138,7 @@ section {
 
 .page-subtitle {
   margin: 48px auto;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 400;
   text-align: center;
 }
