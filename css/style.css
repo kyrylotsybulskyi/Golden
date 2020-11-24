@@ -70,6 +70,7 @@ section {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  text-align: right;
 }
 
 .navigation ul li {
@@ -80,6 +81,7 @@ section {
 
 .navigation a {
   text-decoration: none;
+  height: 10px;
   color: #ffffff;
 }
 
@@ -105,19 +107,10 @@ section {
   position: absolute;
 }
 
-.navigation ul ul a {
-  color: #0097e6;
-  display: block;
-  padding: 0 24px;
-}
-
-.navigation ul ul a:hover {
-  color: #33d9b2;
-}
-
 /*  Splash  */
 .splash {
-  background: #0097e6;
+  background-image: url(E:/Projects/learning-git-3/images/Background_Image.png);
+  background-size: cover;
   color: #ffffff;
   min-height: 500px;
   display: -ms-flexbox;
@@ -131,7 +124,7 @@ section {
 
 .page-title {
   margin: 0;
-  font-size: 72px;
+  font-size: 75px;
   word-spacing: 0;
   font-weight: 700;
   line-height: 1.2;
