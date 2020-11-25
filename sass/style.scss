@@ -7,6 +7,7 @@ $color-four: #ffffff;
 $color-five: #2c2c54;
 $font-header: 'Montserrat', sans-serif;
 $font-text: 'Signika', serif;
+$font-golden: 'Great Vibes', cursive;
 $transition: all 1s;
 
 /*  Global */
@@ -45,14 +46,14 @@ section {
 
 .btn {
     display: inline-block;
-    min-width: 240px;
-    height: 65px;
-    margin: 24px auto 0 auto;
-    padding: 16px;
-    border-radius: 5px;
+    min-width: 138px;
+    min-height: 65px;
+    /*margin-top: 40%;
+    margin-left: 40%;*/
+    padding: 25px 51px 26px;
     font-family: $font-header;
-    font-size: 18px;
-    text-align: center;
+    font-size: 14px;
+    /*text-align: center;*/
     text-decoration: none;
     cursor: pointer;
     background-color: #fed136;
@@ -61,7 +62,8 @@ section {
     transition: $transition;
     text-transform: uppercase;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: 700;
+    border-radius: 5px;
 }
 
 .btn:hover {
@@ -72,7 +74,7 @@ section {
 /*   Navigation  */
 .navigation {
     background: $color-one;
-    padding: 12px 0;
+    padding: 0;
 }
 
 .navigation ul {
@@ -81,7 +83,7 @@ section {
     list-style-type: none;
     position: absolute;
     top: 5%;
-    right: 20%;
+    right: 6%;
 }
 
 .navigation ul li {
@@ -121,17 +123,25 @@ section {
 /*  Splash  */
 .splash {
     background-image: url('../images/Background_Image.png');
+    /*opacity: 0.5;
     /*background-color: #000000;*/
-    opacity: 0,5;
+    
     background-size: cover;
     color: $color-four;
-    min-height: 500px;
+    min-height: 730px;
     display: flex;
 }
+
+/*.splash::after {
+content: "";
+background-color: #000000;
+opacity: 0.5;
+}*/
 
 .splash-inner {
     margin: 10% auto;
     max-width: 70%;
+    
 }
 
 .page-title {
@@ -142,6 +152,8 @@ section {
     line-height: 1.2;
     font-family: $font-header;
     text-align: center;
+    position: relative;
+    top: 50%;
 }
 
 .page-subtitle {
@@ -150,9 +162,26 @@ section {
     font-weight: 400;
     text-align: center;
     font-style: italic;
+    position: absolute;
+    top: 25%;
+    left: 40%;
     
 }
 
 .splash-inner .btn {
-    margin-left: auto;
+    /*margin-left: auto;*/
+    position: absolute;
+    bottom: 35%;
+    left: 45%;
+}
+
+.golden {
+    margin: 0;
+    font-family: $font-golden;
+    font-size: 26px;
+    color: #fed136;
+    font-style: italic;
+    position: absolute;
+    top: 5%;
+    left:20%
 }
