@@ -80,11 +80,13 @@ section {
     margin: 0;
     list-style-type: none;
     position: absolute;
-    top: 180px;
-    
+    top: 5%;
+    right: 20%;
+}
+
 .navigation ul li {
     display: inline-block;
-    margin: 0 40x 0 0;
+    margin: 0 40px 0 0;
     position: relative;
 }
 
@@ -118,8 +120,9 @@ section {
 
 /*  Splash  */
 .splash {
-    /*background-image: url('../images/Background_Image.png');*/
-    background: #0097e6;
+    background-image: url('../images/Background_Image.png');
+    /*background-color: #000000;*/
+    opacity: 0,5;
     background-size: cover;
     color: $color-four;
     min-height: 500px;
@@ -146,6 +149,8 @@ section {
     font-size: 40px;
     font-weight: 400;
     text-align: center;
+    font-style: italic;
+    
 }
 
 .splash-inner .btn {
