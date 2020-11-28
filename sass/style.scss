@@ -155,14 +155,15 @@ h3 {
     background-size: cover;
     color: $color-four;
     min-height: 730px;
+    max-height: 1000px;
     display: flex;
 }
 
-/*.splash::after {
+.splash:after {
 content: "";
 background-color: #000000;
 opacity: 0.5;
-}*/
+}
 
 .splash-inner {
     /*margin: 10% auto;*/
@@ -207,8 +208,9 @@ opacity: 0.5;
     color: $color-one;
     font-style: italic;
     position: absolute;
-    top: 5%;
-    left:20%
+    text-transform: none;
+    top: 3vw;
+    left: 18vw;
 }
 
 /*  Services  */
