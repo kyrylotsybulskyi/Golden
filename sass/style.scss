@@ -212,12 +212,14 @@ opacity: 0.5;
 
 /*  Services  */
 
-
 .flex-1 {
-    flex: 0 0 33.333%; 
-    position: relative;
-    text-align: justify;
-    padding: 96px 56px 0 0;
+    padding: 0;
+    /*background-color: #ffffff;*/
+    display: flex;
+    flex-direction: column;
+    /*margin-right: 1%;
+    margin-bottom: 5%;
+    border: 2px solid red;*/
 }
 
 .flex-1 h1 {
@@ -247,9 +249,12 @@ i {
 }
 
 .flex-2 {
+    padding: 0;
     background-color: #ffffff;
-    display: flexbox;
-    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1%;
+    margin-bottom: 5%;
     border: 2px solid red;
 }
 
@@ -260,7 +265,7 @@ h4, p {
 img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 90%;
            
 }
 
