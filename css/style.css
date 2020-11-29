@@ -16,6 +16,8 @@ body {
   max-width: 1140px;
   /*padding: 0;*/
   margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container h1 {
@@ -29,7 +31,7 @@ section {
 
 p {
   color: #777777;
-  font-size: 14px;
+  font-size: 1.1em;
   letter-spacing: -0.35px;
   font-weight: 400;
 }
@@ -47,7 +49,7 @@ h3 {
   height: 17px;
   color: #777777;
   font-family: "Signika", serif;
-  font-size: 16px;
+  font-size: 1.1em;
   font-style: italic;
   text-align: center;
   margin: 0 auto;
@@ -98,19 +100,24 @@ h3 {
   margin: 0;
   list-style-type: none;
   position: absolute;
-  top: 5%;
-  right: 6%;
+  top: 5vmax;
+  right: 6vmax;
+  z-index: 1;
 }
 
 .navigation ul li {
   display: inline-block;
   margin: 0 40px 0 0;
   position: relative;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .navigation a {
   text-decoration: none;
-  height: 10px;
+  font-size: 1em;
   color: #ffffff;
 }
 
@@ -138,26 +145,22 @@ h3 {
 
 /*  Splash  */
 .splash {
-  /*background: #000000;
-    opacity: 0.5;*/
   background-image: url("../images/Background_Image.png");
   background-size: cover;
   color: #ffffff;
-  min-height: 730px;
-  display: -ms-flexbox;
-  display: flex;
+  min-height: 930px;
 }
 
 .transparent {
   display: block;
   width: 100%;
-  height: 730px;
+  height: 930px;
   background-color: #000000;
   opacity: 0.5;
 }
 
 .splash-inner {
-  /*margin: 10% auto;*/
+  margin: 10% auto;
   max-width: 100%;
   position: absolute;
   width: 100%;
@@ -168,17 +171,18 @@ h3 {
 
 .page-title {
   margin: 0;
-  font-size: 4.5em;
+  font-size: 4.6vmax;
   word-spacing: 0;
   font-weight: 700;
   line-height: 1.2;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  padding-bottom: 2em;
 }
 
 .page-subtitle {
   margin-top: 10vw;
-  font-size: 2.5em;
+  font-size: 2.5vmax;
   font-weight: 400;
   text-align: center;
   font-style: italic;
@@ -186,7 +190,7 @@ h3 {
 
 .splash-inner .btn {
   position: relative;
-  margin: 5vw auto 0;
+  /*margin: 5vw auto 0;*/
   left: 50%;
   transform: inherit;
 }
@@ -215,7 +219,7 @@ h3 {
 }
 
 .flex-1 h1 {
-  font-size: 18px;
+  font-size: 1.3em;
 }
 
 i {
@@ -243,7 +247,8 @@ i {
   background-color: #ffffff;
   display: -ms-flexbox;
   display: flex;
-  /*justify-content: space-around;*/
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-direction: column;
       flex-direction: column;
   margin-right: 1%;
@@ -264,7 +269,7 @@ img {
 h4 {
   color: #333333;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: 700;
   letter-spacing: -0.45px;
   margin: 29px 0 0 0;
@@ -344,5 +349,89 @@ footer ul li {
   font-style: normal;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+}
+
+/* Responsiv <=576px */
+@media (max-width: 576px) {
+  .golden {
+    font-size: 2em;
+    left: 7vw;
+  }
+  .page-subtitle {
+    font-size: 4vmax;
+  }
+  .page-title {
+    font-size: 5vmax;
+    padding-bottom: 15vmax;
+  }
+  .btn {
+    padding: 1em 2em 1em;
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  /*.navigation ul {        
+        position: absolute;
+        top: 5vmax;
+        right: 6vmax;
+    }*/
+  .navigation ul li {
+    display: inline-block;
+    margin: 0 40px 0 0;
+    position: relative;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+  .navigation a {
+    font-size: 1.1em;
+  }
+  .navigation ul ul li {
+    display: block;
+    margin: 0 0 12px 0;
+  }
+  .navigation ul ul {
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 12px;
+  }
+  .navigation li:hover ul {
+    display: block;
+    position: absolute;
+  }
+  .copyright {
+    position: relative;
+    left: -50%;
+    transform: translateX(100%);
+  }
+  .copyright p {
+    margin: 1.7vw 0 0;
+    font-size: 1em;
+    position: absolute;
+    left: -6em;
+    bottom: -5em;
+  }
+}
+
+/* Responsiv 576px-768px */
+@media (min-width: 576px) and (max-width: 768px) {
+  .golden {
+    font-size: 2em;
+    left: 7vw;
+  }
+  .page-subtitle {
+    font-size: 4vmax;
+  }
+  .page-title {
+    font-size: 5vmax;
+    padding-bottom: 15vmax;
+  }
+  .btn {
+    padding: 1em 2em 1em;
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
