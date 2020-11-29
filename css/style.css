@@ -144,7 +144,6 @@ h3 {
   background-size: cover;
   color: #ffffff;
   min-height: 730px;
-  max-height: 1000px;
   display: -ms-flexbox;
   display: flex;
 }
@@ -274,5 +273,74 @@ p {
   margin-top: -4px;
   font-style: italic;
   color: #737373;
+}
+
+/*  Footer  */
+footer {
+  margin: 48px 15%;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-footer {
+  color: #555555;
+  background: #ffffff;
+  padding: 5px;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+
+footer li {
+  list-style-type: none;
+  display: inline;
+}
+
+footer ul li {
+  font-size: 0;
+  padding-right: 9px;
+}
+
+.social-media {
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.social-media ul li i {
+  color: #ffffff;
+  background-color: #222222;
+  font-size: 18px;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  padding-top: 0;
+  border-radius: 50%;
+  text-align: center;
+  /*margin-bottom: 20px;*/
+}
+
+.page-footer .row {
+  width: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.social-media ul li i::before {
+  margin-top: 10px;
+}
+
+.copyright {
+  position: relative;
+  left: -50%;
+  transform: translateX(100%);
+}
+
+.copyright p {
+  margin: 1.7vw 0 0;
+  padding: 0;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
