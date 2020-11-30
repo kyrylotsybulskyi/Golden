@@ -490,3 +490,18 @@ footer ul li {
 
     
 }   
+
+@media (min-width: 1200px) {    
+    
+    .page-title {
+        
+        font-size: 4em;;
+        
+        padding-bottom: 2em;
+    }
+    
+    .page-subtitle {
+        margin-top: -15vw ;
+        font-size: 2.5em;
+    }    
+}   
