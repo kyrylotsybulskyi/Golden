@@ -256,7 +256,7 @@ i {
     flex-direction: column;
     margin-right: 1%;
     margin-bottom: 10%;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 
 h4, p {
@@ -389,15 +389,14 @@ footer ul li {
 
     .navigation ul {        
         position: absolute;
-        top: 5vmax;
-        /*right: 6vmax;*/
+        top: 5vmax;        
     }
     
     .navigation ul li {
         display: block;
         height: 3em;
         text-align: center;
-        left: -50%;
+        left: -5%;
         /*transform: translateX(100%);*/
         margin: 0 75px 0 0;
         position: relative;        
@@ -408,7 +407,7 @@ footer ul li {
     }
 
     .splash-inner {
-        top: 60%;        
+        top: 70%;        
     }
     
     footer {
@@ -418,9 +417,9 @@ footer ul li {
 
     .social-media {
         /*position: relative;  */     
-        left: -23%; 
+        left: 0; 
         
-        bottom: 0.8em;
+        bottom: 3em;
         transform: inherit;
     }
 
@@ -438,10 +437,10 @@ footer ul li {
     
     .copyright {
         position: relative;
-        width: 45%;
+        width: 35%;
         height: 3em;
-        left: 0;
-        bottom: 3em;
+        left: -15%;
+        bottom: 0.2em;
         
     }
     
@@ -456,9 +455,11 @@ footer ul li {
 /* Responsiv 576px-768px */
     
 @media (min-width: 576px) and (max-width: 768px) {    
+    
+    
     .golden {
         font-size: 2em;
-        left: 7vw;
+        left: 4vw;
     }
 
     .page-subtitle {
@@ -467,12 +468,24 @@ footer ul li {
 
     .page-title {        
         font-size: 5vmax;               
-        padding-bottom: 15vmax;
+        padding-bottom: 10vmax;
     }
 
     .btn {             
         padding: 1em 2em 1em;        
         font-size: 1.5em;
+    }
+
+    .navigation ul {        
+        right: 1.5em;       
+   }
+
+    .navigation ul li {        
+         margin: 0 15px 0 0;       
+    }
+
+    .navigation a {        
+        font-size: 1.2em;        
     }
 
     

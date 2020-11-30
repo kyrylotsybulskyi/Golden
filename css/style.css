@@ -253,7 +253,7 @@ i {
       flex-direction: column;
   margin-right: 1%;
   margin-bottom: 10%;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 h4, p {
@@ -377,13 +377,12 @@ footer ul li {
   .navigation ul {
     position: absolute;
     top: 5vmax;
-    /*right: 6vmax;*/
   }
   .navigation ul li {
     display: block;
     height: 3em;
     text-align: center;
-    left: -50%;
+    left: -5%;
     /*transform: translateX(100%);*/
     margin: 0 75px 0 0;
     position: relative;
@@ -392,15 +391,15 @@ footer ul li {
     font-size: 1.4em;
   }
   .splash-inner {
-    top: 60%;
+    top: 70%;
   }
   footer {
     margin: 0;
   }
   .social-media {
     /*position: relative;  */
-    left: -23%;
-    bottom: 0.8em;
+    left: 0;
+    bottom: 3em;
     transform: inherit;
   }
   .social-media ul li {
@@ -414,10 +413,10 @@ footer ul li {
   }
   .copyright {
     position: relative;
-    width: 45%;
+    width: 35%;
     height: 3em;
-    left: 0;
-    bottom: 3em;
+    left: -15%;
+    bottom: 0.2em;
   }
   .copyright p {
     margin: 1.7vw 0 0;
@@ -432,18 +431,27 @@ footer ul li {
 @media (min-width: 576px) and (max-width: 768px) {
   .golden {
     font-size: 2em;
-    left: 7vw;
+    left: 4vw;
   }
   .page-subtitle {
     font-size: 4vmax;
   }
   .page-title {
     font-size: 5vmax;
-    padding-bottom: 15vmax;
+    padding-bottom: 10vmax;
   }
   .btn {
     padding: 1em 2em 1em;
     font-size: 1.5em;
+  }
+  .navigation ul {
+    right: 1.5em;
+  }
+  .navigation ul li {
+    margin: 0 15px 0 0;
+  }
+  .navigation a {
+    font-size: 1.2em;
   }
 }
 /*# sourceMappingURL=style.css.map */
