@@ -353,6 +353,9 @@ footer ul li {
 
 /* Responsiv <=576px */
 @media (max-width: 576px) {
+  section {
+    padding: 2em 0;
+  }
   .golden {
     font-size: 2em;
     left: 7vw;
@@ -371,41 +374,50 @@ footer ul li {
   p {
     font-size: 1.2em;
   }
-  /*.navigation ul {        
-        position: absolute;
-        top: 5vmax;
-        right: 6vmax;
-    }*/
+  .navigation ul {
+    position: absolute;
+    top: 5vmax;
+    /*right: 6vmax;*/
+  }
   .navigation ul li {
-    display: inline-block;
-    margin: 0 40px 0 0;
+    display: block;
+    height: 3em;
+    text-align: center;
+    left: -50%;
+    /*transform: translateX(100%);*/
+    margin: 0 75px 0 0;
     position: relative;
-    -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
   }
   .navigation a {
-    font-size: 1.1em;
+    font-size: 1.4em;
   }
-  .navigation ul ul li {
-    display: block;
-    margin: 0 0 12px 0;
+  .splash-inner {
+    top: 60%;
   }
-  .navigation ul ul {
-    display: none;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 12px;
+  footer {
+    margin: 0;
   }
-  .navigation li:hover ul {
-    display: block;
-    position: absolute;
+  .social-media {
+    /*position: relative;  */
+    left: -23%;
+    bottom: 0.8em;
+    transform: inherit;
+  }
+  .social-media ul li {
+    margin: 0;
+  }
+  .social-media ul li i {
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
   }
   .copyright {
     position: relative;
-    left: -50%;
-    transform: translateX(100%);
+    width: 45%;
+    height: 3em;
+    left: 0;
+    bottom: 3em;
   }
   .copyright p {
     margin: 1.7vw 0 0;

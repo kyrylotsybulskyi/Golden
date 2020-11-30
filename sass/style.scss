@@ -172,8 +172,7 @@ h3 {
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
-    
+    transform: translate(-50%, -70%);    
 }
 
 .page-title {
@@ -360,7 +359,11 @@ footer ul li {
 
 /* Responsiv <=576px */
 
-@media (max-width: 576px) {    
+@media (max-width: 576px) {   
+    
+    section {
+        padding: 2em 0;
+    }
     .golden {
         font-size: 2em;
         left: 7vw;
@@ -384,46 +387,62 @@ footer ul li {
         font-size: 1.2em;              
     }
 
-    /*.navigation ul {        
+    .navigation ul {        
         position: absolute;
         top: 5vmax;
-        right: 6vmax;
-    }*/
+        /*right: 6vmax;*/
+    }
     
     .navigation ul li {
-        display: inline-block;
-        margin: 0 40px 0 0;
-        position: relative;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
+        display: block;
+        height: 3em;
+        text-align: center;
+        left: -50%;
+        /*transform: translateX(100%);*/
+        margin: 0 75px 0 0;
+        position: relative;        
     }
     
     .navigation a {        
-        font-size: 1.1em;        
-    }
-    
-    .navigation ul ul li {
-        display: block;
-        margin: 0 0 12px 0;
-    }
-    
-    .navigation ul ul {
-        display: none;
-        left: 50%;
-        transform: translateX(-50%);
-        padding-top: 12px;
-    }    
-    
-    .navigation li:hover ul {
-        display: block;
-        position: absolute;
+        font-size: 1.4em;        
     }
 
+    .splash-inner {
+        top: 60%;        
+    }
+    
+    footer {
+        margin: 0;        
+        
+    }
+
+    .social-media {
+        /*position: relative;  */     
+        left: -23%; 
+        
+        bottom: 0.8em;
+        transform: inherit;
+    }
+
+    .social-media ul li{
+        margin: 0;
+    }
+    
+    .social-media ul li i {
+        font-size: 1.5rem;
+        height: 3rem;
+        width: 3rem;        
+        line-height: 3rem;      
+        
+    }
     
     .copyright {
         position: relative;
-        left: -50%;
-        transform: translateX(100%);
+        width: 45%;
+        height: 3em;
+        left: 0;
+        bottom: 3em;
+        
     }
     
     .copyright p {
