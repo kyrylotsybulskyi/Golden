@@ -16,8 +16,7 @@ body {
   max-width: 1140px;
   /*padding: 0;*/
   margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
 }
 
 .container h1 {
@@ -66,12 +65,9 @@ h3 {
   display: inline-block;
   min-width: 138px;
   min-height: 65px;
-  /*margin-top: 40%;
-    margin-left: 40%;*/
   padding: 25px 51px 26px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  /*text-align: center;*/
   text-decoration: none;
   cursor: pointer;
   background-color: #fed136;
@@ -190,7 +186,6 @@ h3 {
 
 .splash-inner .btn {
   position: relative;
-  /*margin: 5vw auto 0;*/
   left: 50%;
   transform: inherit;
 }
@@ -210,7 +205,6 @@ h3 {
 /*  Services  */
 .flex-1 {
   padding: 0;
-  /*background-color: #ffffff;*/
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -253,7 +247,6 @@ i {
       flex-direction: column;
   margin-right: 1%;
   margin-bottom: 10%;
-  /*border: 2px solid red;*/
 }
 
 h4, p {
@@ -324,7 +317,6 @@ footer ul li {
   padding-top: 0;
   border-radius: 50%;
   text-align: center;
-  /*margin-bottom: 20px;*/
 }
 
 .page-footer .row {
@@ -399,19 +391,19 @@ footer ul li {
   .page-footer .row {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
     -ms-flex-align: center;
         align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   footer {
     margin: 0;
   }
   .social-media {
-    /*position: relative;  */
-    left: 0;
-    /*bottom: 3em;*/
-    transform: inherit;
+    left: -20px;
+    transform: translateX(0);
   }
   .social-media ul li {
     margin: 0;
@@ -423,16 +415,14 @@ footer ul li {
     line-height: 3rem;
   }
   .copyright {
-    /*position: relative;*/
-    width: 35%;
     height: 3em;
-    left: -15%;
     bottom: 0.2em;
+    left: 0;
+    transform: translateX(0);
   }
   .copyright p {
     margin: 1.7vw 0 0;
     font-size: 1em;
-    /*position: absolute;*/
     left: -6em;
     bottom: -5em;
   }
