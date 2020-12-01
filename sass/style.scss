@@ -359,7 +359,7 @@ footer ul li {
 
 /* Responsiv <=576px */
 
-@media (max-width: 576px) {   
+@media (max-width: 575px) {   
     
     section {
         padding: 2em 0;
@@ -390,15 +390,18 @@ footer ul li {
     .navigation ul {        
         position: absolute;
         top: 5vmax;        
+        left: 50%;
+        right: auto;
+        text-align: center;
+        transform: translateX(-50%);
     }
     
     .navigation ul li {
         display: block;
         height: 3em;
         text-align: center;
-        left: -5%;
-        /*transform: translateX(100%);*/
-        margin: 0 75px 0 0;
+        left: -5%;        
+        margin: 0;
         position: relative;        
     }
     
@@ -409,6 +412,62 @@ footer ul li {
     .splash-inner {
         top: 70%;        
     }
+
+    .page-footer .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer {
+        margin: 0;        
+        
+    }
+
+    .social-media {
+        /*position: relative;  */     
+        left: 0; 
+        
+        /*bottom: 3em;*/
+        transform: inherit;
+    }
+
+    .social-media ul li{
+        margin: 0;
+    }
+    
+    .social-media ul li i {
+        font-size: 1.5rem;
+        height: 3rem;
+        width: 3rem;        
+        line-height: 3rem;      
+        
+    }
+    
+    .copyright {
+        /*position: relative;*/
+        width: 35%;
+        height: 3em;
+        left: -15%;
+        bottom: 0.2em;
+        
+    }
+    
+    .copyright p {
+        margin: 1.7vw 0 0;        
+        font-size: 1em;
+        /*position: absolute;*/
+        left: -6em;
+        bottom: -5em;
+    }
+}   
+
+    
+
+
+/*  Responsiv 768 - 1200 px  */
+
+@media (min-width: 768px) and (max-width: 1199px) {    
     
     footer {
         margin: 0;        
@@ -445,50 +504,12 @@ footer ul li {
     }
     
     .copyright p {
-        margin: 1.7vw 0 0;        
+        
         font-size: 1em;
         position: absolute;
         left: -6em;
         bottom: -5em;
-    }
-}   
-/* Responsiv 576px-768px */
-    
-@media (min-width: 576px) and (max-width: 768px) {    
-    
-    
-    .golden {
-        font-size: 2em;
-        left: 4vw;
-    }
-
-    .page-subtitle {
-        font-size: 4vmax;
-    }
-
-    .page-title {        
-        font-size: 5vmax;               
-        padding-bottom: 10vmax;
-    }
-
-    .btn {             
-        padding: 1em 2em 1em;        
-        font-size: 1.5em;
-    }
-
-    .navigation ul {        
-        right: 1.5em;       
-   }
-
-    .navigation ul li {        
-         margin: 0 15px 0 0;       
-    }
-
-    .navigation a {        
-        font-size: 1.2em;        
-    }
-
-    
+    }    
 }   
 
 @media (min-width: 1200px) {    
