@@ -25,9 +25,7 @@ body {
 
 .container {
     max-width: 1140px;
-    /*padding: 0;*/
-    margin: 0 auto;
-    /*display: flex;*/
+    margin: 0 auto;    
 }
 
 .container h1 {
@@ -74,7 +72,7 @@ h3 {
     display: inline-block;
     min-width: 138px;
     min-height: 65px;    
-    padding: 25px 51px 26px;
+    /*padding: 25px 51px 26px;*/
     font-family: $font-header;
     font-size: 14px;    
     text-decoration: none;
@@ -189,12 +187,6 @@ h3 {
     font-weight: 400;
     text-align: center;
     font-style: italic;
-}
-
-.splash-inner .btn {
-    position: relative;    
-    left: 50%;
-    transform: inherit;
 }
 
 .golden {
@@ -345,29 +337,16 @@ footer ul li {
     font-size: 14px;
 }
 
-/* Responsiv <=576px */
+/* Responsiv w<=768px h<=320px */
 
-@media (max-width: 575px) {   
+@media (max-width: 768px) and (min-height: 320px) {   
     
     section {
         padding: 2em 0;
     }
-    .golden {
-        font-size: 2em;
-        left: 7vw;
-    }
-
-    .page-subtitle {
-        font-size: 4vmax;
-    }
-
-    .page-title {        
-        font-size: 5vmax;               
-        padding-bottom: 15vmax;
-    }
 
     .btn {             
-        padding: 1em 2em 1em;        
+        padding: 0.5em 1em 0.5em;        
         font-size: 1.5em;
     }
 
@@ -377,28 +356,46 @@ footer ul li {
 
     .navigation ul {        
         position: absolute;
-        top: 5vmax;        
+        width: 90%;
+        flex-direction: row;        
+        top: 20vmin;        
         left: 50%;
         right: auto;
         text-align: center;
-        transform: translateX(-50%);
+        transform: translateX(-45%);
     }
     
     .navigation ul li {
         display: block;
-        height: 3em;
+        height: 2em;
         text-align: center;
         left: -5%;        
-        margin: 0;
+        margin: 0 2% 0 0;
         position: relative;        
     }
     
     .navigation a {        
-        font-size: 1.4em;        
+        font-size: 1.1em;        
+    }
+    .golden {
+        font-size: 2em;
+        left: 7vmin;
     }
 
     .splash-inner {
-        top: 70%;        
+        top: 60%;        
+    }
+
+    .page-subtitle {
+        font-size: 1.7em;
+        margin-top: -1.7em;
+    }
+
+    .page-title {        
+        font-size: 2.1em;               
+        margin-bottom: 0;
+        padding-bottom: 0.7em;        
+        line-height: 0.7;
     }
 
     .page-footer .row {
@@ -443,12 +440,54 @@ footer ul li {
     }
 }   
 
+/*@media (min-width: 667px) and (max-width: 767px) and (min-height: 530px) {
+
+    .navigation ul {    
+        width: 90%;    
+        position: absolute;
+        top: 10vmax;        
+        left: 55%;              
+    }
+
+    .navigation ul li {
+        display: inline;
+        font-size: 0.9em;
+        padding-right: 20px;         
+    }
+
+    .page-title {
+        padding-bottom: 13vmax;         
+    }
+
+    .page-subtitle {
+        margin-top: -9vmax;
+        color: red;
+    }
+
+    .btn {             
+        padding: 1em 2em 1em;        
+        font-size: 1.3em;
+    }
+
+    
+}
+/*  Responsiv 576 - 768 px  */
+
+/*@media (min-width: 576px) and (max-width: 767px) { 
     
 
+}*/
 
-/*  Responsiv 768 - 1200 px  */
+/*  Responsiv 768 - 992 px  */
 
-@media (min-width: 768px) and (max-width: 1199px) {    
+/*@media (min-width: 768px) and (max-width: 991px) { 
+    
+    
+}
+
+/*  Responsiv 992 - 1200 px  */
+
+/*@media (min-width: 992px) and (max-width: 1199px) {    
     
     footer {
         margin: 0;        
@@ -456,7 +495,7 @@ footer ul li {
     }
 
     .social-media {
-        /*position: relative;  */     
+        /*position: relative;    
         left: 0; 
         
         bottom: 3em;
@@ -493,7 +532,9 @@ footer ul li {
     }    
 }   
 
-@media (min-width: 1200px) {    
+/*  Responsiv > 1200 px  */
+
+/*@media (min-width: 1200px) {    
     
     .page-title {
         
@@ -506,4 +547,4 @@ footer ul li {
         margin-top: -15vw ;
         font-size: 2.5em;
     }    
-}   
+}   */
