@@ -756,13 +756,11 @@ footer ul li {
 
 }
 
-/*@media (min-width: 667px) and (max-width: 767px) and (min-height: 530px) {
+@media (min-width: 1024px) and (max-width: 1440px) and (min-height: 1024px) {
 
-    .navigation ul {    
-        width: 90%;    
+    .navigation ul {            
         position: absolute;
-        top: 10vmax;        
-        left: 55%;              
+        top: 3em;                   
     }
 
     .navigation ul li {
@@ -771,19 +769,32 @@ footer ul li {
         padding-right: 20px;         
     }
 
-    .page-title {
-        padding-bottom: 13vmax;         
+    .splash-inner {
+        flex-direction: column;
+        align-content: center;
+        top: 40%;
     }
 
-    .page-subtitle {
-        margin-top: -9vmax;
-        color: red;
+    .page-title {
+        font-size: 4.6em;    
+        padding-bottom: 1em;    
+    }
+
+    .page-subtitle {        
+        font-size: 2.4em;
     }
 
     .btn {             
         padding: 1em 2em 1em;        
         font-size: 1.3em;
-    }
+        text-align: center;
+        width: fit-content;
+        position: relative;
+        left: 22%;
+        right: auto;
+        bottom: 10%;        
+}
+    
 
     
 }
