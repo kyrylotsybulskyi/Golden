@@ -72,7 +72,7 @@ h3 {
     display: inline-block;
     min-width: 138px;
     min-height: 65px;    
-    /*padding: 25px 51px 26px;*/
+    padding: 25px 51px 26px;
     font-family: $font-header;
     font-size: 14px;    
     text-decoration: none;
@@ -85,6 +85,9 @@ h3 {
     color: #ffffff;
     font-weight: 700;
     border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .btn:hover {
@@ -163,6 +166,8 @@ h3 {
 .splash-inner {
     margin: 10% auto;
     max-width: 100%;
+    flex-direction: column;
+    align-content: center;
     position: absolute;
     width: 100%;
     top: 50%;
@@ -178,7 +183,7 @@ h3 {
     line-height: 1.2;
     font-family: $font-header;
     text-align: center;
-    padding-bottom: 2em;
+    /*padding-bottom: 2em;*/
 }
 
 .page-subtitle {
@@ -198,7 +203,7 @@ h3 {
     position: absolute;
     text-transform: none;
     top: 3vw;
-    left: 18vw;
+    left: 10vw;
 }
 
 /*  Services  */
@@ -326,7 +331,7 @@ footer ul li {
 .copyright {
     position: relative;
     left: -50%;
-    transform: translateX(100%);
+    transform: translateX(50%);
 }
 
 .copyright p {
@@ -348,7 +353,8 @@ footer ul li {
     .btn {             
         padding: 0.5em 1em 0.5em;        
         font-size: 1.5em;
-        text-align: center;        
+        text-align: center; 
+        margin: 0 auto;       
     }
 
     p {
@@ -451,10 +457,10 @@ footer ul li {
         font-size: 1.5em;
         text-align: center;  
         width: fit-content;
-        position: relative;
+        /*position: relative;
         left: 50%;
         right: auto;
-        transform: translateX(-50%);      
+        transform: translateX(-50%);  */    
     }
 
     p {
@@ -491,7 +497,8 @@ footer ul li {
 
     .splash-inner {
         top: 40%;    
-        flex-direction: column;      
+        flex-direction: column;   
+        align-content: center;   
     }
 
     .page-subtitle {
@@ -556,10 +563,10 @@ footer ul li {
         font-size: 1.5em;
         text-align: center;     
         width: fit-content;
-        position: relative;
+        /*position: relative;
         left: 50%;
         right: auto;
-        transform: translateX(-50%);   
+        transform: translateX(-50%);   */
     }
 
     .navigation ul {        
@@ -653,17 +660,18 @@ footer ul li {
 
 /* Responsiv 414<w<=1024px 530px<h<1023px */
 
-@media (min-width: 414px) and (max-width: 1024px) and (min-height: 530px) and (max-height: 1023px) {
+@media (min-width: 414px) and (max-width: 1024px) and (min-height: 530px) and (max-height: 1024px) {
 
     .btn {             
         padding: 0.5em 1em 0.5em;        
         font-size: 1.5em;
         text-align: center;     
         width: fit-content;
-        position: relative;
+        margin: 0 auto;
+        /*position: relative;
         left: 50%;
         right: auto;
-        transform: translateX(-50%);   
+        transform: translateX(-50%);   */
     }
 
     .navigation ul {        
@@ -698,8 +706,7 @@ footer ul li {
     .splash-inner {
         top: 40%;     
         flex-direction: column;  
-        text-align: center; 
-        
+        align-content: center;         
     }
 
     .page-subtitle {
@@ -755,8 +762,9 @@ footer ul li {
     }
 
 }
+/* Responsiv 1024 px<w<2560 px h>530 px */
 
-@media (min-width: 1024px) and (max-width: 1440px) and (min-height: 1024px) {
+@media (min-width: 1024px) and (max-width: 2560px) and (min-height: 530px) {
 
     .navigation ul {            
         position: absolute;
@@ -776,12 +784,12 @@ footer ul li {
     }
 
     .page-title {
-        font-size: 4.6em;    
+        font-size: 2.1em;    
         padding-bottom: 1em;    
     }
 
     .page-subtitle {        
-        font-size: 2.4em;
+        font-size: 1.7em;
     }
 
     .btn {             
@@ -789,89 +797,47 @@ footer ul li {
         font-size: 1.3em;
         text-align: center;
         width: fit-content;
-        position: relative;
-        left: 22%;
-        right: auto;
-        bottom: 10%;        
-}
-    
-
-    
-}
-/*  Responsiv 576 - 768 px  */
-
-/*@media (min-width: 576px) and (max-width: 767px) { 
-    
-
-}*/
-
-/*  Responsiv 768 - 992 px  */
-
-/*@media (min-width: 768px) and (max-width: 991px) { 
-    
-    
+        margin: 0 auto;
+       }
+       
 }
 
-/*  Responsiv 992 - 1200 px  */
+/* Responsiv w>=2560 px h>1024 px */
 
-/*@media (min-width: 992px) and (max-width: 1199px) {    
-    
-    footer {
-        margin: 0;        
-        
-    }
+@media (min-width: 2560px) and (min-height: 1024px) {
 
-    .social-media {
-        /*position: relative;    
-        left: 0; 
-        
-        bottom: 3em;
-        transform: inherit;
-    }
-
-    .social-media ul li{
-        margin: 0;
-    }
-    
-    .social-media ul li i {
-        font-size: 1.5rem;
-        height: 3rem;
-        width: 3rem;        
-        line-height: 3rem;      
-        
-    }
-    
-    .copyright {
-        position: relative;
-        width: 35%;
-        height: 3em;
-        left: -15%;
-        bottom: 0.2em;
-        
-    }
-    
-    .copyright p {
-        
-        font-size: 1em;
+    .navigation ul {            
         position: absolute;
-        left: -6em;
-        bottom: -5em;
-    }    
-}   
-
-/*  Responsiv > 1200 px  */
-
-/*@media (min-width: 1200px) {    
-    
-    .page-title {
-        
-        font-size: 4em;;
-        
-        padding-bottom: 2em;
+        top: 3em;                   
     }
-    
-    .page-subtitle {
-        margin-top: -15vw ;
-        font-size: 2.5em;
-    }    
-}   */
+
+    .navigation ul li {
+        display: inline;
+        font-size: 0.9em;
+        padding-right: 20px;         
+    }
+
+    .splash-inner {
+        flex-direction: column;
+        align-content: center;
+        top: 25%;
+    }
+
+    .page-title {
+        font-size: 2.1em;    
+        padding-bottom: 1em;    
+    }
+
+    .page-subtitle {        
+        font-size: 1.7em;
+    }
+
+    .btn {             
+        padding: 1em 2em 1em;        
+        font-size: 1.3em;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+       }
+       
+}
